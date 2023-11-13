@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+<link rel="stylesheet" href="informatika.css">
+<title>Web Pembelajaran</title>
+<title>CSS Website Layout</title>
+<style>
+
+  img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+}
+
+ nav, section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+nav ul {
+  list-style: none;
+  color: blue;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown1-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown1:hover .dropdown1-content {
+  display: block;
+}
+
+.interactive-box {
+  width: 200px;
+  height: 100px;
+  background-color: #f4f4f4;
+  text-align: center;
+  line-height: 100px;
+  transition: background-color 0.3s ease;
+}
+
+p, h2{
+  color: black;
+}
+
+table {
+  font-family: roboto;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: black;
+}
+
+/* Membuat tiga kolom yang tidak sama di mana masing-masing kolom bersifat “float” terhadap yang
+lainnya */
+.column {
+float: left;
+padding: 10px;
+}
+/* Left and right column */
+.column.side {
+width: 25%;
+background-color : #abdbe3;
+}
+/* Middle column */
+.column.middle {
+width: 50%;
+background-color : lightyellow;
+}
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+table {
+  font-family: roboto;
+  border-collapse: collapse;
+ }
+
+/* Style untuk footer */
+.footer {
+background-color: grey;
+color: yellow;
+padding: 10px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<!-- class bernama header -->
+<div class="header">
+  <header>
+    </style>
+  <img src="Screenshot 2023-10-30 103002.png" alt="logocc">
+</header>
+<div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+	<li><a href="PJOK.html">PJOK</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Informatika</a>
+      <div class="dropdown-content">
+          <a href="informatika2.html">Pengenalan CSS</a>
+          <a href="informatika1.html">Pengenalan HTML</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Biologi</a>
+      <div class="dropdown-content">
+          <a href="bio1.html">Sel Hewan</a>
+          <a href="bio2.html">Sel Tumbuhan</a>
+      </div>
+    </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Inggris</a>
+        <div class="dropdown-content">
+            <a href="ing1.html">Reported Speech</a>
+            <a href="layout.html">Indirect Speech</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Sejarah</a>
+        <div class="dropdown-content">
+            <a href="sej1.html">Imperialisme</a>
+            <a href="sej2.html">Kolonialisme</a>
+  </ul>
+</div>
+<!-- class bernama row -->
+<div class="row">
+<!-- class bernama column side -->
+<div class="column side">
+    <img src="kanisius-sma.jpg" alt="passive"
+     width="300" 
+     height="600" />
+</div>
+<!-- class bernama column side -->
+<div class="column middle">
+    <h2>Sel Hewan</h2>
+    <img src="Sel-Hewan.png" alt="selH">
+    <p align="justify">Sel hewan adalah unit fungsional dasar yang membangun tubuh hewan. Struktur sel hewan dibagi menjadi 15</p>
+
+    <h2>Membran Sel</h2>
+    <p align="justify">Membran sel adalah membran semipermeabel pada sebuah sel yang mengelilingi dan membungkus isi sitoplasma dan nukleoplasma. Membran sel memisahkan sel dari cairan interstitial (komponen utama dari cairan ekstraseluler) di sekitarnya. Pembentukan membran sel dilakukan dengan bahan dasar berupa lipoprotein yang dibentuk oleh lemak dan protein. Membran ini terdiri atas lipida dwilapis, termasuk kolesterol (komponen lipid) yang berada di antara fosfolipid untuk mempertahankan fluiditasnya pada berbagai suhu.</p>
+    <h2>Sitoplasma</h2>
+    <p align="justify">Sitoplasma adalah bagian sel yang terbungkus membran plasma. Sitoplasma terdiri dari air, protein, karbohidrat, lemak, mineral, dan vitamin. Sitoplasma berfungsi sebagai tempat penyimpanan bahan kimia sel yang penting bagi metabolisme sel, seperti enzim-enzim, ion-ion, gula, lemak dan protein. Pada sel eukariota, sitoplasma adalah bagian non-nukleus dari protoplasma. Pada sitoplasma terdapat sitoskeleton, berbagai organel dan vesikuli, serta sitosol yang berupa cairan tempat organel melayang-layang di dalamnya.</p>
+    <h2>Retikulum Endoplasma</h2>
+    <p align="justify">Berikutnya adalah retikulum endoplasma yang merupakan organel berbentuk benang-benang pada bagian inti sel. Retikulum endoplasma adalah organel yang dapat ditemukan pada semua sel eukariotik. Retikulum endoplasma merupakan bagian dari sistem endomembran. Retikulum endoplasma merupakan labirin membran yang demikian banyak sehingga RE ini meliputi separuh lebih dari total membran dalam sel-sel eukariotik.</p>
+    <h2>Mitokondria</h2>
+    <p align="justify">Bagian dari sel hewan berikutnya adalah mitokondria yang merupakan organel terbesar sebagai mesin dalam sel. Organel ini memiliki dua bagian lapis membran berlekuk yang disebut dengan istilah kritas. Di dalam mitokondria, glukosa dan oksigen saling bekerja sama untuk membentuk energi yang dibutuhkan.</p>
+    <h2>Lisosom</h2>
+    <p align="justify">Lisosom merupakan kantong terikat pada membran berisi kandungan enzim hidrolitik. Lisosom terletak pada sel eukariotik, bagian ini berguna untuk mengontrol pencernaan intraseluler dalam kondisi apapun. Lisosom berfungsi untuk mengontrol pencernaan intraseluler, mencerna materi menggunakan fagositosis, menghancurkan organel sel yang telah rusak, dan memasukkan makro molekul dari luar menuju ke dalam sel melalui mekanisme endositosis.</p>
+    <h2>Peroksisom</h2>
+    <p align="justify">Peroksisom atau dikenal juga sebagai badan mikro merupakan organel berkantong kecil berisi enzim katalase. Fungsinya untuk menguraikan peroksida (H2O2) atau metabolisme yang bersifat racun dan mengubah lemak menjadi karbohidrat. Organel peroksisom ini bisa ditemukan pada bagian sel hati dan juga ginjal.</p>
+    <h2>Ribosom</h2>
+    <p align="justify">Ribosom adalah organel sel yang memiliki tekstur padat dengan ukuran kecil, yaitu diameter sekitar 20 nm. Organel ini terdiri dari 65% RNA ribosom dan 35% protein ribosom atau ribonukleoprotein. Ribosom pada sel hewan menerjemahkan RNA untuk membentuk rantai polipeptida atau protein dengan menggunakan asam amino saat proses translasi. Ribosom terikat pada retikulum endoplasma kasar atau membran inti sel yang berfungsi sebagai tempat berlangsungnya proses sintesis protein.</p>
+    <h2>Sentriol</h2>
+    <p align="justify">Sentriol merupakan struktur organel yang berbentuk tabung pada sel eukariota. Organel ini berperan penting dalam proses pembelahan sel dengan membentuk benang spindel dan pembentukan silia, serta flagela. Bukan hanya itu, sepasang sentriol juga dapat membentuk suatu struktur gabungan yang disebut dengan sentrosom.</p>
+    <h2>Badan Golgi</h2>
+    <p align="justify">Badan golgi atau juga dikenal dengan sebutan aparatus golgi merupakan organel yang berkaitan dengan fungsi ekskresi sel hewan. Posisinya tepat berada pada sel eukariotik yang berperan dalam proses ekskresi, seperti ginjal. Bentuknya seperti kantong pipih dengan ukuran bervariasi dan terikat oleh membran. Setiap sel hewan memiliki sekitar 10-20 badan golgi.</p>
+    <h2>Nukleus</h2>
+    <p align="justify">Nukleus adalah organel terkecil yang mengatur sekaligus mengendalikan aktivitas sel hewan. Proses ini dimulai dari metabolisme sampai pembelahan sel. Nukleus mengandung materi genetik yang berbentuk DNA linear panjang membentuk kromosom. Organel ini bisa ditemukan pada sel eukariotik yang terdiri dari beberapa bagian, seperti membran inti, nukleoplasma, kromosom, dan nukleus.</p>
+    <h2>Nukleolus</h2>
+</div>
+<!-- class bernama column side -->
+<div class="column side">
+    <img src="kanisius-sma.jpg" alt="passive"
+     width="300" 
+     height="600" />
+</div>
+</div>
+<!-- class bernama footer -->
+<div class="footer">
+<p>Rafael Russell Effendi XI8/32</p>
+</div>
+</body>
+</html>

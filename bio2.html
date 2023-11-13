@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+<link rel="stylesheet" href="informatika.css">
+<title>Web Pembelajaran</title>
+<title>CSS Website Layout</title>
+<style>
+
+  img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+}
+
+ nav, section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+nav ul {
+  list-style: none;
+  color: blue;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown1-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown1:hover .dropdown1-content {
+  display: block;
+}
+
+.interactive-box {
+  width: 200px;
+  height: 100px;
+  background-color: #f4f4f4;
+  text-align: center;
+  line-height: 100px;
+  transition: background-color 0.3s ease;
+}
+
+p, h2{
+  color: black;
+}
+
+table {
+  font-family: roboto;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: black;
+}
+
+/* Membuat tiga kolom yang tidak sama di mana masing-masing kolom bersifat “float” terhadap yang
+lainnya */
+.column {
+float: left;
+padding: 10px;
+}
+/* Left and right column */
+.column.side {
+width: 25%;
+background-color : #abdbe3;
+}
+/* Middle column */
+.column.middle {
+width: 50%;
+background-color : lightyellow;
+}
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+table {
+  font-family: roboto;
+  border-collapse: collapse;
+ }
+
+/* Style untuk footer */
+.footer {
+background-color: grey;
+color: yellow;
+padding: 10px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<!-- class bernama header -->
+<div class="header">
+  <header>
+    </style>
+  <img src="Screenshot 2023-10-30 103002.png" alt="logocc">
+</header>
+<div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+	<li><a href="PJOK.html">PJOK</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Informatika</a>
+      <div class="dropdown-content">
+          <a href="informatika2.html">Pengenalan CSS</a>
+          <a href="informatika1.html">Pengenalan HTML</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Biologi</a>
+      <div class="dropdown-content">
+          <a href="bio1.html">Sel Hewan</a>
+          <a href="bio2.html">Sel Tumbuhan</a>
+      </div>
+    </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Inggris</a>
+        <div class="dropdown-content">
+            <a href="ing1.html">Reported Speech</a>
+            <a href="layout.html">Indirect Speech</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Sejarah</a>
+        <div class="dropdown-content">
+            <a href="sej1.html">Imperialisme</a>
+            <a href="sej2.html">Kolonialisme</a>
+  </ul>
+</div>
+<!-- class bernama row -->
+<div class="row">
+<!-- class bernama column side -->
+<div class="column side">
+    <img src="kanisius-sma.jpg" alt="passive"
+     width="300" 
+     height="600" />
+</div>
+<!-- class bernama column side -->
+<div class="column middle">
+<h2>Sel Tumbuhan</h2>
+    <img src="seltumbuhan.jpg" alt="selT">
+    <p align="justify">Sel tumbuhan adalah sel yang menyusun fungsi kerja dari seluruh fungsi kehidupan tumbuhan. Bagian sel tumbuhan dibagi menjadi 11</p>
+    <h2>Membran Sel</h2>
+    <p align="justify">Membrane sel atau sering juga disebut membran plasma merupakan struktur yang hampir dimiliki oleh semua makhluk hidup, mulai dari hewan, tumbuhan, jamur, bakteri, arkaea, hingga protista</p>
+    <h2>Dinding Sel</h2>
+    <p align="justify">Berbeda dengan membran sel yang dimiliki oleh makhluk hewan atau manusia, sel tumbuhan dan jamur diketahui memiliki struktur penyusun yang unik yakni dinding sel. Dengan adanya dinding sel, hal ini menjadikan tumbuhan memiliki struktur yang unik dibandingkan dengan sel yang ada pada hewan.</p>
+    <h2>Sitoplasma</h2>
+    <p align="justify">Cairan dalam sel yang berada di antara nukleus dengan membran plasma biasa disebut dengan istilah sitoplasma. Sitoplasma sendiri pada dasarnya memiliki dua komponen penyusunnya, yaitu sitosol dan beberapa organel lainnya. Sitosol merupakan komponen penyusun yang memiliki bagian cair dari sitoplasma dan mengelilingi organel.</p>
+    <h2>Nukleus</h2>
+    <p align="justify">Nukleus sendiri bisa dikatakan sebagai inti dari sel yang dimiliki oleh tumbuhan. Nukleus ini merupakan pusat dari administrasi sel yang dapat mengarahkan proses metabolisme, mulai dari pertumbuhan, pembelahan, bahkan juga sintesis protein. Di dalam nukleus atau inti sel sering kali tersimpan kromosom atau sebuah komponen genetik yang tersusun dari berbagai benang kromatin.</p>
+    <h2>Ribosom</h2>
+    <p align="justify">Ribosom menjadi salah satu bagian dari penyusun sel tumbuhan berikutnya. Ribosom ini bisa dipahami sebagai partikel yang lebih kecil dari mitokondria. Meskipun kecil, ribosom merupakan sel penyusun tumbuhan yang memiliki ukuran yang padat. Hingga saat ini, alat yang bisa digunakan untuk melihat ribosom pada sel tumbuhan ini hanyalah mikroskop elektron.</p>
+    <h2>Retikulum Endoplasma</h2>
+    <p align="justify">RE sendiri bisa dipahami sebagai organ sel yang bertindak sebagai saluran dalam sitoplasma yang menghubungkan antara membran sel dengan nukleus. Retikulum endoplasma sendiri sering juga disebut sebagai sistem angkutan yang ada pada sel tumbuhan untuk berbagai macam molekul di dalam sel. Namun, tidak hanya di dalam sel, RE juga bisa menyalurkan berbagai molekul dari antar sel melalui plasmodesmata. Hal ini menjadikan organ sel ini memiliki fungsi sebagai transportasi protein.</p>
+    <h2>Badan Golgi</h2>
+    <p align="justify">Badan golgi pada awalnya merupakan penemuan dari seorang ahli histologi dan patologi yang berasal dari negara Italia, sosok tersebut bernama Camillo Golgi. Pada sel penyusun yang dimiliki tumbuhan, badan Golgi biasa juga disebut sebagai diktiosom. Badan golgi bisa dipahami sebagai tumpukan kantong yang dilapisi membran dan bertugas untuk mempersiapkan protein yang akan diekspor dari sel.</p>
+    <h2>Mitokondria</h2>
+    <p align="justify">Mitokondria bisa dikatakan sebagai sebuah organel sel yang mempunyai struktur kompleks untuk melakukan pembentuk energi terhadap tumbuhan. Pada makhluk hidup yang lain, mitokondria dapat digunakan sebagai tempat untuk melakukan respirasi. Respirasi sendiri merupakan sebuah proses perombakan atau katabolisme yang digunakan untuk menghasilkan energi atau tenaga bagi berlangsung proses hidup.</p>
+    <p align="justify">Sel yang menyusun tumbuhan berikutnya adalah lisosom. Lisosom ini sendiri bisa dikatakan sebagai pusat pencernaan sel yang menghasilkan berbagai jenis enzim. Lisosom juga diketahui mampu memecah partikel makanan dan mendaur ulang komponen sel yang sudah usang.</p>
+    <h2>Vakuola</h2>
+    <p align="justify">Vakuola merupakan sel tumbuhan dewasa yang berisi berisi cairan dan mengandung ion anorganik terlarut, asam organik, gula, enzim, dan senyawa metabolit sekunder lainnya. Secara sederhana, vakuola bisa dikatakan memiliki fungsi sebagai penyimpan limbah beracun serta produk bermanfaat lain, seperti air. Vakuola dalam sel tumbuhan menempati kisaran antara 80 hingga 90% dari total volume sel.</p>
+    <h2>Kloroplas</h2>
+    <p align="justify">Organ sel terakhir yang hanya ada pada tumbuhan adalah kloroplas. Kloroplas sendiri bisa dipahami sebagai organ sel yang memiliki kandungan pigmen hijau yang menangkap sinar matahari untuk selanjutnya diubah menjadi gula. Proses ini sendiri biasanya disebut sebagai fotosintesis untuk menghasilkan karbohidrat dan oksigen pada tumbuhan.</p>
+  </section>
+</div>
+<!-- class bernama column side -->
+<div class="column side">
+    <img src="kanisius-sma.jpg" alt="passive"
+     width="300" 
+     height="600" />
+</div>
+</div>
+<!-- class bernama footer -->
+<div class="footer">
+<p>Rafael Russell Effendi XI8/32</p>
+</div>
+</body>
+</html>
